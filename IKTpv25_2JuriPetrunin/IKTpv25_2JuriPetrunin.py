@@ -1,5 +1,5 @@
 from random import *
-from module1 import*
+from module1 import* #teha module ja kooperita kodid kuni "def lisamine"
 
 
 #Põhifunktsioon
