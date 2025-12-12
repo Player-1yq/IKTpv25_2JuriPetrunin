@@ -5,6 +5,15 @@ from module1 import*
 #Põhifunktsioon
 def arvud_loendis():
     """Kirjandus
+
+        Küsib, kui palju arve genereerida.
+        Küsib juhuarvude vahemiku.
+        Genereerib juhuslike täisarvude loendi.
+        Sorteerib selle täisarvu.
+        Jagab loendi kolmeks: positiivsed, negatiivsed ja nullid.
+        Leiab positiivsete ja negatiivsete keskmised.
+        Lisab need keskmised algsesse loendisse.
+        Sorteerib ja väljastab lõpliku loendi.
     """
     print("Andmed:")
     n=abs(int(input("Mitu täisarvu genereerime loendisse? => ")))
