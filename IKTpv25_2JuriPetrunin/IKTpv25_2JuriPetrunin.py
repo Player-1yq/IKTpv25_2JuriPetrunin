@@ -16,23 +16,27 @@ def arvud_loendis():
         Sorteerib ja väljastab lõpliku loendi.
     """
     print("Andmed:")
-    n=abs(int(input("Mitu täisarvu genereerime loendisse? => ")))
-    mini=int(input("Sisesta vahemiku minimaalne arv => "))
-    maxi=int(input("Sisesta vahemiku maksimaalne arv => "))
+    try:
+        n=abs(int(input("Mitu täisarvu genereerime loendisse? => ")))
+        mini=int(input("Sisesta vahemiku minimaalne arv => "))
+        maxi=int(input("Sisesta vahemiku maksimaalne arv => "))
+    except ValueError:
+        print("Sisestake ainuld arvu")
+
     if mini>=maxi:
         mini,maxi =vahetus(mini,maxi)
 
-
-    s=[]#Alghe loend
-    pos=[]#positiivse
+    #vaja kustuda ":", kus nad olid
+    s=[]
+    pos=[]
     neg=[]
     null=[]
     generaator(n,s,mini,maxi)#tabulatsioon
     print()
-    print("Tulemused:")
+    print("Tulemused: ")
     print("Saadud loend alates",mini,"kuni",maxi,s)
     s.sort() #s.sort
-    print("Sorteeritud loend",s)# siin vaja ,
+    print("Sorteeritud loend",s)
     jagamine(s,pos,neg,null)
     print("Positiivsete elementide loend",pos)
     print("Negatiivsete elementide loend",neg)
