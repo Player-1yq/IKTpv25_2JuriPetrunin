@@ -1,7 +1,7 @@
 from random import *
 import module1
    
-def vahetus(a,b):
+def vahetus(a,b): #vajab a,b
     abi=a
     a=b
     b=abi
@@ -9,18 +9,18 @@ def vahetus(a,b):
 
 def generaator(n,loend,a,b):
     for i in range (n):#siin vaja sulk
-        loend.append(randint(a,b))#siin vaja tabulatsioon ja ei vaja sulk
+        loend.append(randint(a,b))#siin vaja "." pärast loend ja ei vaja sulk
 
    
 
 def jagamine(loend:list,p:list,n,nol):
     for el in loend:
         if el>0:
-            p.append(el)
+            p.append(el)#siin vaja "." pärast loend ja ei vaja sulk
         elif el<0: #siin vaja el<0:
-            n.append(el)
+            n.append(el)#siin vaja "." pärast loend ja ei vaja sulk
         else:
-            nol.append(el)
+            nol.append(el)#siin vaja "." pärast loend ja ei vaja sulk
 
 def keskmine(loend):
     n=len(loend)
@@ -34,5 +34,5 @@ def keskmine(loend):
     return kesk
 
 def lisamine(loend,el):
-    loend.append(el)
-    loend.sort()
+    loend.append(el)#siin vaja "." pärast loend ja ei vaja sulk
+    loend.sort()#siin vaja "." pärast loend ja ei vaja sulk
