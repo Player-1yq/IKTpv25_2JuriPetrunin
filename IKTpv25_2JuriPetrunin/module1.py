@@ -1,5 +1,5 @@
 from random import *
-import module1
+import module1 #vaja panna siia kodid kuni "def lisamine" teisest failist ja panna siia
    
 def vahetus(a,b): #vajab a,b
     abi=a
